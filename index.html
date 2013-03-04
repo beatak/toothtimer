@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+  <head>
+    <meta charset='utf-8'>
+    <title>beatak - Toothtimer</title>
     <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="title">
-				<h1>Tooth Timer</h1>
-			</div>
-			<div id="button">
-				<p>START</p>
-			</div>
-			<div id="video" style="display: none;"></div>
-			<div id="timer" style="display: none;"></div>
-			<div id="cheer" style="display: none;">
-				<p>Good job! You're done!</p>
-			</div>
-		</div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=load"></script>
-    <script type="text/javascript" src="master.js"></script>
-	</body>
+    <link href='//fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <h1 class="header">Toothtimer</h1>
+
+      <div class="start">
+        <div class="button start-button">Start</div>
+      </div>
+
+      <div class="play is-hidden">
+        <div id="video"></div>
+        <div class="message" data-finish="Good job! You're done!"></div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//apis.google.com/js/client.js?onload=load"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
 </html>
