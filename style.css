@@ -187,16 +187,29 @@ body {
 }
 
 #video {
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+
+
+  /* background-color: rgba(127, 127, 0, 0.5); */
+}
+
+.video-border {
+  background-color: #5ac3b6;
+  border-radius: 10px;
   width: 420px;
   height: 315px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  background-color: #5ac3b6;
-  border-radius: 10px;
-  padding: 20px;
-
-  /* background-color: rgba(127, 127, 0, 0.5); */
+#ytplayer {
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
 .button {
@@ -242,9 +255,39 @@ MEDIA QUERY
 
 @media screen and (max-width: 640px) {
   body {
-    background-color: #F00;
+    /* background-color: #F00; */
     background-size: 100%;
   }
+
+  #wrapper {
+    position: static;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .header {
+    font-size: 64px;
+  }
+
+  .start {
+    width: 100%;
+  }
+
+  .video-border {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 315px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #video {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
 }
 
 /*

@@ -2,8 +2,8 @@
 
 console.log('loading main.js');
 
-var VIDEO_PLAYER_WIDTH = 420;
-var VIDEO_PLAYER_HEIGHT = 315;
+// var VIDEO_PLAYER_WIDTH = 420;
+// var VIDEO_PLAYER_HEIGHT = 315;
 var START_COUNT = 120;
 var YOUTUBE_KEY = 'AIzaSyAzbxEzpDORl5gUwugGG8z8IGcxRULSEMQ';
 
@@ -60,8 +60,8 @@ var build_iframe = function (video_id) {
   var option = {
     id: 'ytplayer',
     type: 'text/html',
-    width: VIDEO_PLAYER_WIDTH,
-    height: VIDEO_PLAYER_HEIGHT,
+    // width: VIDEO_PLAYER_WIDTH,
+    // height: VIDEO_PLAYER_HEIGHT,
     src: 'http://www.youtube.com/embed/' + video_id + '?autoplay=1',
     frameborder: '0'
   };
